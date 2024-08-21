@@ -10,6 +10,34 @@ drawings:
 @andikadeveloper
 
 ---
+
+# Deploying an Application
+
+---
+
+# Container
+
+---
+
+# Container Orchestration
+
+---
+
+# Flow
+
+---
+
+# kubectl
+
+---
+
+# minikube
+
+---
+
+# Practice
+
+---
 class: text-center
 layout: center
 ---

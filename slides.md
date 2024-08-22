@@ -7,8 +7,6 @@ drawings:
 
 # Introduction to Kubernetes
 
-@andikadeveloper
-
 ---
 
 # Deploying an Application
@@ -30,12 +28,16 @@ drawings:
 
 ---
 
+# Container
+<img src="/img/container.png" class="h-100">
+---
+
 # Docker
 <v-clicks>
 
+- <img src="/img/docker-logo.png" class="h-80">
 - Container Manager/Container Runtime
 - Build, Run, and Share Containerized Applications
-- <img src="/img/docker-logo.png" class="h-80">
 - Practice running a container
 </v-clicks>
 
@@ -47,23 +49,19 @@ drawings:
     <img src="/img/orchestration-music.png" class="h-100">
   </template>
   <template #2>
-    Automating:
-
-    - deployment
-    - scale
-    - and manage containerized applications
-  </template>
-  <template #3>
-    Tools: Kubernetes
+    <ul>
+      <li>High Availability</li>
+      <li>Auto Scaling</li>
+      <li>Manage container</li>
+    </ul>
   </template>
 </v-switch>
 
 ---
 
 # Flow
-(Explained on meeting with scribble)
-<br>
 Ref: [Kubernetes](https://kubernetes.io/docs/concepts/overview/components)
+<img src="/img/simple-kubernetes-flow.png">
 
 ---
 
@@ -95,6 +93,12 @@ Ref: [Kubernetes](https://kubernetes.io/docs/concepts/overview/components)
 - Pods
 - Services
 - Deployments
+- Ingress
+
+---
+
+# Flow
+<img src="/img/kubernetes-object.png" class="h-100">
 
 ---
 
@@ -105,17 +109,52 @@ Ref: [Kubernetes](https://kubernetes.io/docs/concepts/overview/components)
 
 ---
 
-# Flow Pods, Services, and Deployments
-(Explained on meeting with scribble)
+# Practice deploy real project
+<img src="/img/deployed-project.png" class="h-100">
 
 ---
 
-# Practice Real Case
-- Deploy a containerized application
-- Build a Docker image
-- Deploy to Kubernetes Cluster
-- Expose the application to the internet
-- Link Repo:
+# Practice deploy real project
+
+<v-clicks>
+
+<ol>
+  <li>
+  Clone the repo:
+  <a href="https://github.com/andikadeveloper/excalidraw">Here</a>
+  </li>
+  <li>Build a containerized application</li>
+  <li>Create kubernetes yaml file</li>
+  <li>Apply yaml file to Kubernetes Cluster</li>
+  <li>Expose the application to the internet</li>
+  <li>
+    Edit etc hosts
+    <ul>
+      <li>
+      Linux/MacOS:
+      <br>
+      <i>sudo vim /etc/hosts</i>
+      </li>
+      <li>
+      Windows:
+      <a href="https://en.wikiversity.org/wiki/Hosts_file/Edit">Link</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+  Enable Ingress:
+  <br>
+  <i>minikube addons enable ingress</i>
+  </li>
+  <li>Add and apply Ingress yaml file</li>
+  <li>
+  Make the application accessible using minikube:
+  <br>
+  <i>minikube tunnel</i>
+  </li>
+</ol>
+
+</v-clicks>
 
 ---
 class: text-center
@@ -123,4 +162,4 @@ layout: center
 ---
 
 # Thanks
-@andikadeveloper
+[@andikadeveloper](https://github.com/andikadeveloper)

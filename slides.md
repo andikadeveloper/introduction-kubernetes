@@ -9,6 +9,11 @@ drawings:
 
 ---
 
+# Final result
+<img src="/img/deployed-project.png" class="h-100">
+
+---
+
 # Deploying an Application
 (Ref: [Container Evolution](https://kubernetes.io/docs/concepts/overview))
 <v-switch>
@@ -29,7 +34,16 @@ drawings:
 ---
 
 # Container
-<img src="/img/container.png" class="h-100">
+
+<v-switch>
+  <template #1>
+    <img src="/img/container.png" class="h-100">
+  </template>
+  <template #2>
+    <img src="/img/react-container.png" class="h-100">
+  </template>
+</v-switch>
+
 ---
 
 # Docker
@@ -39,6 +53,18 @@ drawings:
 - Container Manager/Container Runtime
 - Build, Run, and Share Containerized Applications
 - Practice running a container
+</v-clicks>
+
+---
+
+# And then...
+
+<v-clicks>
+
+- How about scaling?
+- How about managing multiple containers?
+- How make my user still can access my app when we're deploying?
+
 </v-clicks>
 
 ---
@@ -124,8 +150,24 @@ Ref: [Kubernetes](https://kubernetes.io/docs/concepts/overview/components)
   <a href="https://github.com/andikadeveloper/excalidraw">Here</a>
   </li>
   <li>Build a containerized application</li>
+  <li>
+    Add docker image to minikube:
+    <br>
+    <i>minikube image load excalidraw:v1.0.0</i>
+  </li>
   <li>Create kubernetes yaml file</li>
   <li>Apply yaml file to Kubernetes Cluster</li>
+</ol>
+
+</v-clicks>
+
+---
+
+# Practice deploy real project
+
+<v-clicks>
+
+<ol>
   <li>Expose the application to the internet</li>
   <li>
     Edit etc hosts
